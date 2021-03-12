@@ -57,7 +57,7 @@ function displayGroceries() {
  * @param isHeading Indicate whether it is a header row
  * @returns A table row with content
  */
-function createRow(values: Array<string | number| boolean>, isHeading: boolean = false) {
+function createRow(values: Array<string | number| boolean>, isHeading: boolean = false): HTMLTableRowElement {
     const row = document.createElement('tr');
     values.forEach(value => {
         const data = document.createElement(isHeading ? 'th' : 'td');
